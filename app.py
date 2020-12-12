@@ -17,9 +17,9 @@ app.layout = html.Div(
             className="inputs",
             children=[
                 html.H2("Enter your first number: "),
-                dcc.Input(id="Input1", type="text", placeholder="0"),
+                dcc.Input(id="Input1", type="text", placeholder="1"),
                 html.H2("Enter your second number: "),
-                dcc.Input(id="Input2", type="text", placeholder="0")
+                dcc.Input(id="Input2", type="text", placeholder="1")
             ]
         ),
         html.Div(
@@ -35,12 +35,17 @@ app.layout = html.Div(
         Input('Input1', "value"), Input('Input2', "value")]
 )
 def calculate_output(Input1, Input2):
-    if Input1 == int and Input2 == int:
+    value = int(Input1) * int(Input2)
+    out = html.H1(f"The answer is {value}")
+    return out
+    """
+        if Input1 == int and Input2 == int:
         value = int(Input1)*int(Input2)
         out = html.H1(f"The answer is {value}")
         return out
     else:
         return("Please enter your numbers")
+    """
 
 
 if __name__ == "__main__":
