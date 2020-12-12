@@ -1,0 +1,23 @@
+.content {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 20px;
+    border: 3px solid lightblue;
+    padding: 10px;
+    box-shadow: 10px -10px 5px  rgba(109, 165, 226, 0.468);
+  -moz-box-shadow: 10px -10px 5px  rgba(109, 166, 226, 0.619);
+  -webkit-box-shadow: 10px -10px 5px  rgba(109, 166, 226, 0.619);
+  -o-box-shadow: 10px -10px 5px  rgba(109, 166, 226, 0.619);
+  border-radius:25px;
+}
+
+.inputs{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 50px;
+    border: 3px solid lightblue;
+    padding: 10px;
+    border-radius:25px;
+}
